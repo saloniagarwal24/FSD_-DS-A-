@@ -1,0 +1,26 @@
+virtual dom-react support
+node packet manager-npm-rg react angular express ke package install-create environment
+browser object model -bom-js
+js library is react and react framework is vite 
+how to install on notepad learn
+to again get link cd project name then npm run dev
+
+in js arrow function =>
+datatype fun name=()=>
+{
+    return 
+}
+const XYZ=()=>
+{}
+
+const XYZ=()=>"hello"; single line function no need of return  
+assignment-restro
+make webpage
+then header with logo border radius 50% welcome our abes-c1
+make footer with address-c2
+c3{
+in mid content
+burger componet with image and price 
+coke componet with img and price
+similarly third
+}
