@@ -7,12 +7,20 @@
 </head>
 <body>
     <script>
+        // Priority Order-depends on time complexity
+        // const (1st Priority): Use this for almost everything. Once you set a value, it cannot change. it has least time complexity.
+        // let (2nd Priority): Use this only when the value needs to update, like a counter in a loop.
+        // var (Last/No Priority): Do not use var. It is old, leaks out of blocks, and causes confusing bugs.
     // <!-- there are 3 type of generic data type -->\\
     // generic no need to define int float Etc
     //  <!-- before 2015 E6 there are const and var -->
-     var a=110;
-     var a=5;
-     var a=2;
+    //  var a=110;
+    //  var a=5;
+    //  var a=2;
+     let a=12;
+     a=13;
+    //  var a=13; ||const a=34;
+    //  one var in one block can be declared once error will come 
      //alert is overwriting the a value showing the last value of a only getting 2 alert 
      alert("value is "+a);
       </script>
