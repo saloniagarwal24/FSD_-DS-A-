@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let num=prompt("enter your number");
+        let copy=num;
+        let dig=0;
+        let sum=0; 
+    while(copy>0)
+    {
+         copy = Math.floor(copy / 10);
+           dig++;
+    }
+    copy=num;
+    while(num>0)
+    {
+     sum=sum+((num%10)**dig);
+     num=Math.floor(num/=10);
+    }
+    if(sum==copy)
+    console.log("YES");
+     else
+     console.log("No");
+    </script>
+</body>
+</html>
