@@ -1,1 +1,5 @@
 script is addition embedded need other lang to run!
+in json object will be inside curcly braces json used to store bunch of objects data 
+in json object need w ecan use min var we can store large data 
+eg ds a student in data in object
+in json data in key value pair with , if more elements

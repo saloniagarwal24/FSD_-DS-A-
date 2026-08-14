@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create object
+        const student={
+            name:"saloni",
+            class:"B.tech",
+            fee:128600
+        }
+    //o/p is [object object]  object is stored in an array form so that we can access it json is returning datatype,type of data
+        document.write(student+"<br/>");
+        document.write(student.name)+"<br/>";
+        document.write("<br/>"+student.class)+"<br/>";
+     for (const key in student) {
+     document.write(key + " is " + student[key]+"<br/>");
+     }
+
+    </script>
+</body>
+</html>

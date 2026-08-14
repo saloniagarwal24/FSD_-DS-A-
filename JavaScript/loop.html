@@ -26,6 +26,43 @@
     {
         document.write("number*i");
     }
+    const cars = [
+    { name: "Swift", cost: 700000, seats: 5 },
+    { name: "Fortuner", cost: 3500000, seats: 7 },
+    { name: "Thar", cost: 1800000, seats: 4 },
+    { name: "Ertiga", cost: 1200000, seats: 7 }
+];
+
+const aeroplane = [
+    { name: "Boeing 737", cost: 80000000, seats: 180 },
+    { name: "Airbus A320", cost: 90000000, seats: 186 },
+    { name: "Boeing 777", cost: 200000000, seats: 396 },
+    { name: "Airbus A380", cost: 400000000, seats: 500 }
+];
+
+const helicopter = [
+    { name: "Robinson R44", cost: 50000000, seats: 4 },
+    { name: "Bell 206", cost: 70000000, seats: 5 },
+    { name: "Airbus H125", cost: 90000000, seats: 6 },
+    { name: "Sikorsky S-76", cost: 150000000, seats: 12 }
+];
+const getCarCost = (seats) => {
+    const vehicle = cars.find(car => car.seats === seats);
+    return vehicle ? vehicle.cost : "No car found";
+};
+
+const getAeroplaneCost = (seats) => {
+    const vehicle = aeroplane.find(plane => plane.seats === seats);
+    return vehicle ? vehicle.cost : "No aeroplane found";
+};
+
+const getHelicopterCost = (seats) => {
+    const vehicle = helicopter.find(heli => heli.seats === seats);
+    return vehicle ? vehicle.cost : "No helicopter found";
+};
+    //car helicopter aeroplane using arrow function
+    //software prompt will ask which vehicle
+    //will ask no. of seats the its cost
     </script>
 </body>
 </html>
