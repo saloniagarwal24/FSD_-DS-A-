@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student=[
+            { name:"A",course:"btech",fee:128600, rollNo:11,},
+             { name:"B",course:"btech",fee:128600, rollNo:12},
+              { name:"C",course:"mtech",fee:228600, rollNo:13},
+               { name:"D",course:"mtech",fee:228600, rollNo:4},
+                { name:"E",course:"10th",fee:28600, rollNo:5},
+                 { name:"F",course:"10th",fee:28600, rollNo:6},
+    ];
+     const {name,course,fee}=student;
+      const even=student.filter((name)=>(name.course=="btech"));
+        console.log(even);
+      const rollno=even.map(rollno=>even.rollno);
+      console.log(rollno);
+       
+    </script>
+</body>
+</html>
