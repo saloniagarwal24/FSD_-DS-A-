@@ -5,4 +5,4 @@ eg ds a student in data in object
 in json data in key value pair with , if more elements
 syncs task1 then only task2 -FCFS 
 Async-T1-T2-T3-T4
-OompleTe THE ONE WITH NO WORK FIRST 
+compleTe THE ONE WITH NO WORK FIRST 

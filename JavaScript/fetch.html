@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:100px;
+            height:100px;
+           }
+        table{
+            width:80%;
+            margin:auto;
+            padding:18px;
+            font-size:25px;
+            color: red;
+            border:2px solid red;
+        }
+    </style>
+</head> 
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No
+                </th>
+                <TH>
+                    title 
+                </TH>
+                <th>image</th>
+                <th>category</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+        </tbody>
+    </table>
+    <script>
+     const ele= documnet.getElementById("data");
+     const url="https://dummyjson.com/products";
+     async function loaddata(){
+        try{
+        const res=await fetch(url);//converted fetched json data into a string 
+        const data=await res.json();//convert the data back into og form
+        console.log("data",data.products);
+        let row="";
+        //map fucntion array ke elemnt ko modify krta tha 
+        data.products.map((i,INDEX)=>{
+         row+=`
+         <tr> 
+            <td ${INDEX+1}></td>
+            <td ${i.title}></td>
+             <td><img src="${i.images[0]}"/></td>
+             <td ${i.category}></td>
+              <td ${i.price}></td>
+            </tr>`;
+            ele.innerHTML=row;
+        })
+        }
+        catch(err){
+      console.log("error",err);
+        }
+    //string literals means if u want add num in string let a=10
+     }
+     laoddata();
+    //let a=10;
+    //console.log("my age is ${a}");
+    </script>
+
+</body>
+</html>
